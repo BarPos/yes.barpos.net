@@ -1,0 +1,82 @@
+*{
+    color: #f1f1f1;
+    font-family: 'Stalinist One', cursive;
+}
+
+body{
+    background: url(https://i.imgur.com/AXsBjPM.png) repeat;
+    background-size: 25%;
+    min-height: 100%;
+    max-width: 100%;
+    animation: scroll 60s linear infinite;
+}
+
+h1{
+    width: min-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    text-align: center;
+}
+
+#container{
+    margin-top: 50vh;
+    margin-left: 50vw;
+    transform: translate(-50%, -50%) scale(1.5);
+
+    background: rgba(0, 0, 0, .5);
+    border: 2px rgba(0, 0, 0, .8) solid;
+    width: 250px;
+    min-width: 200px;
+    min-height: 50px;
+}
+
+#buttons{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 24px;
+    width: 225px;
+    margin-bottom: 20px;
+}
+
+#yes{
+    text-align: center;
+    position: relative;
+    width: calc(50%-40px);
+    float: left;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+#yes:hover{
+    background: rgba(255, 255, 255, .5);
+    color: rgba(0, 0, 0, 1);
+}
+
+#no{
+    text-align: center;
+    position: relative;
+    width: calc(50%-40px);
+    float: right;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+#no:hover{
+    background: rgba(255, 255, 255, .5);
+    color: rgba(0, 0, 0, 1);
+}
+
+@keyframes scroll {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2160px -2160px;
+    }
+}
